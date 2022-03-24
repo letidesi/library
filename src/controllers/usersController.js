@@ -39,15 +39,7 @@ class UserContoller {
         });
       };
 
-      static generatePassword(password){
-          const hashCost = 12
-          return bcrypt.hash(password, hashCost);
-      }
-
-     async addPassword(password){
-        this.hashPassword = await users.generatePassword(password)
-      }
-
+   
 }
 
 export default UserContoller;
